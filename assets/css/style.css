@@ -1,0 +1,65 @@
+
+h1, h2, h3 {
+	font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+body {
+	width: 960px;
+	padding: 0;
+	margin: 0;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.logo {
+
+}
+
+.about {
+	width: 650px;
+	float: left;
+}
+
+.side-bar {
+	width: 270px;
+	float: left;
+	margin-left: 20px;
+}
+
+
+/*pulled from css tricks website 
+
+* {
+    margin: 0;
+}
+html, body {
+    height: 100%;
+    overflow: auto;
+}
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height 
+    margin-bottom: -142px; 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+  /* .push must be the same height as footer 
+    height: 100px; 
+}
+.site-footer {
+  background: orange;
+}*/
