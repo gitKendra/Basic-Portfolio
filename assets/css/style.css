@@ -11,7 +11,7 @@ body {
 	background-image: url('../images/grey.png');
 	background-size: cover;
 }
-h1, h2, h3 {
+h1, h2, h3, h4 {
 	font-family: Georgia, Times, "Times New Roman", serif;
 	color: #4aaaa5;
 }
@@ -67,16 +67,17 @@ a:active {
 	overflow: auto;
 }
 
-.about, .contact {
+.about, .contact, .portfolio {
 	float: left;
-	position: static;
+	position: relative;
 	width: 580px;
 	background-color: #ffffff;
 	border: 1px solid #dddddd;
 	margin: 30px 30px 30px 50px;
 	padding: 28px;
 }
-.about-title, .contact-title {
+.about-title, .contact-title, .portfolio-title {
+	position: relative;
 	margin-bottom: 28px;
 	padding-bottom: 28px;
 	border-bottom: 2px solid #cccccc;
@@ -111,6 +112,7 @@ a:active {
 	border-bottom: 1px solid #cccccc;
 }
 
+/* Form settings */
 .contact-form input, textarea, button {
 	color: #cccccc;
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -131,6 +133,74 @@ a:active {
 	color: #ffffff;
 }
 
+/* Portfolio settings */
+.box-set {
+	position: relative;
+	background-color: #ffffff;
+	height: 560px;
+}
+.box-set h4 {
+	color: #ffffff;
+	text-align: center;
+	font-weight: normal;
+	position: relative;
+	top: 50%;
+    transform: translateY(-50%);
+}
+.box {
+	position: absolute;
+	width: 270px;
+	height: 50px;
+	background-color: #4aaaa5;
+
+}
+
+.box-1 {
+	top: 10px;
+	left: 0px;
+}
+.boxt-1 {
+	top: 100px;
+	left: 0px;
+}
+
+.box-2 {
+	top: 10px;
+	right: 0px;
+}
+.boxt-2 {
+	top: 100px;
+	right: 0px;
+}
+
+.box-3 {
+	top: 200px;
+	left: 0px;
+}
+.boxt-3 {
+	top: 100px;
+	left: 0px;
+}
+
+.box-4 {
+	top: 200px;
+	right: 0px;
+}
+.boxt-4 {
+	top: 100px;
+	right: 0px;
+}
+
+.box-5 {
+	top: 390px;
+	left: 0px;
+}.boxt-5 {
+	top: 100px;
+	left: 0px;
+}
+
+
+/* Footer settings */
 .footer {
  	background-color: #666666;
 
