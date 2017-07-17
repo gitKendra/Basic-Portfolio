@@ -111,13 +111,23 @@ a:active {
 	border-bottom: 1px solid #cccccc;
 }
 
-.social-links img {
-
-}
-
-.contact-form input {
+.contact-form input, textarea, button {
 	color: #cccccc;
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	width: 580px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.contact-form textarea {
+	height: 150px;
+}
+
+.contact-form button {
+	width: 100px;
+	height: 30px;
+	background-color: #4aaaa5;
+	color: #ffffff;
 }
 
 .footer {
