@@ -36,14 +36,17 @@ a:active {
 }
 
 .header {
+	width: 100%
+	position: static;
 	background-color: #ffffff;
 	border-bottom: 2px solid #cccccc;
 	height: 95px;
-	overflow: auto;
 }
 
 .logo {
+	position: absolute;
 	float: left;
+	text-align: center;
     background-color: #4aaaa5;
     color: #ffffff;
     font-family: Georgia, Times, "Times New Roman", serif;
@@ -51,16 +54,16 @@ a:active {
     height: 65px;
     font-size: 28px;
     padding-top: 28px;
-    text-align: center;
  	margin-left: 50px;
 }
 
 .nav-links {
+	position: absolute;
 	float: left;
 	color: #777777;
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 	padding-top: 38px;
-	margin-left: 452px;
+	margin-left: 760px;
 	width: 200px;
 }
 
@@ -157,50 +160,31 @@ a:active {
 
 }
 
-.box-1 {
+/* left boxes and titles (odd ones) */
+.box-1, .boxt-1, .box-3, .boxt-3, .box-5, .boxt-5 {
+	left: 0px;
+}
+
+/* right boxes (even ones) */
+.box-2, .boxt-2, .box-4, .boxt-4 {
+	right: 0px;
+}
+
+/* Boxes by row */
+.box-1, .box-2 {
 	top: 10px;
-	left: 0px;
 }
-.boxt-1 {
-	top: 100px;
-	left: 0px;
-}
-
-.box-2 {
-	top: 10px;
-	right: 0px;
-}
-.boxt-2 {
-	top: 100px;
-	right: 0px;
-}
-
-.box-3 {
+.box-3, .box-4 {
 	top: 200px;
-	left: 0px;
 }
-.boxt-3 {
-	top: 100px;
-	left: 0px;
-}
-
-.box-4 {
-	top: 200px;
-	right: 0px;
-}
-.boxt-4 {
-	top: 100px;
-	right: 0px;
-}
-
 .box-5 {
 	top: 390px;
-	left: 0px;
-}.boxt-5 {
-	top: 100px;
-	left: 0px;
 }
 
+/* Align box title/header on image */
+.boxt-1, .boxt-2, .boxt-3, .boxt-4, .boxt-5 {
+	top: 100px;
+}
 
 /* Footer settings */
 .footer {
