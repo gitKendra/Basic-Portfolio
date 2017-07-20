@@ -3,10 +3,6 @@
 	margin: 0; padding: 0;
 }
 
-head {
-	
-}
-
 body {
 	background-image: url('../images/grey.png');
 	background-size: cover;
@@ -36,13 +32,11 @@ a:active {
 }
 
 .header {
-	width: 100%
 	position: static;
 	background-color: #ffffff;
 	border-bottom: 2px solid #cccccc;
 	height: 95px;
 }
-
 .logo {
 	position: absolute;
 	float: left;
@@ -56,7 +50,6 @@ a:active {
     padding-top: 28px;
  	margin-left: 50px;
 }
-
 .nav-links {
 	position: absolute;
 	float: left;
@@ -81,6 +74,7 @@ a:active {
 	margin: 30px 30px 30px 50px;
 	padding: 28px;
 }
+
 .about-title, .contact-title, .portfolio-title {
 	position: relative;
 	margin-bottom: 28px;
@@ -126,11 +120,9 @@ a:active {
 	margin-top: 5px;
 	margin-bottom: 5px;
 }
-
 .contact-form textarea {
 	height: 150px;
 }
-
 .contact-form button {
 	width: 100px;
 	height: 30px;
@@ -157,7 +149,6 @@ a:active {
 	width: 270px;
 	height: 50px;
 	background-color: #4aaaa5;
-
 }
 
 /* left boxes and titles (odd ones) */
@@ -213,10 +204,4 @@ a:active {
 .footer, .page-wrap:after {
   /* .push must be the same height as footer */
     height: 95px; 
-}
-
-.clearfix::after{
-	content: "";
-	display: block;
-	clear: both;
 }
