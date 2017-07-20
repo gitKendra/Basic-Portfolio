@@ -32,7 +32,7 @@ a:active {
 }
 
 .header {
-	position: static;
+	position: relative;
 	background-color: #ffffff;
 	border-bottom: 2px solid #cccccc;
 	height: 95px;
@@ -52,7 +52,6 @@ a:active {
 }
 .nav-links {
 	position: absolute;
-	float: left;
 	color: #777777;
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 	padding-top: 38px;
@@ -61,13 +60,13 @@ a:active {
 }
 
 .main {
+	position: relative;
 	width: 100%;
 	overflow: auto;
 }
 
 .about, .contact, .portfolio {
 	float: left;
-	position: relative;
 	width: 580px;
 	background-color: #ffffff;
 	border: 1px solid #dddddd;
@@ -130,51 +129,36 @@ a:active {
 	color: #ffffff;
 }
 
-/* Portfolio settings */
-.box-set {
-	position: relative;
-	background-color: #ffffff;
-	height: 560px;
+.portfolio {
+	width: 610px; /* adjusted for loss of padding to keep size same */
+	padding-right: 0px;
+	padding-bottom: 0px;
 }
-.box-set h4 {
-	color: #ffffff;
-	text-align: center;
-	font-weight: normal;
-	position: relative;
-	top: 50%;
-    transform: translateY(-50%);
+.portfolio-title {
+	width: 580px; /* adjusted to fix bottom-border length */
 }
 .box {
+	float: left;
+	position: relative;
+	margin-right: 35px;
+	margin-bottom: 28px;
+}
+
+.boxtitle {
 	position: absolute;
 	width: 270px;
 	height: 50px;
 	background-color: #4aaaa5;
-}
-
-/* left boxes and titles (odd ones) */
-.box-1, .boxt-1, .box-3, .boxt-3, .box-5, .boxt-5 {
-	left: 0px;
-}
-
-/* right boxes (even ones) */
-.box-2, .boxt-2, .box-4, .boxt-4 {
-	right: 0px;
-}
-
-/* Boxes by row */
-.box-1, .box-2 {
-	top: 10px;
-}
-.box-3, .box-4 {
-	top: 200px;
-}
-.box-5 {
-	top: 390px;
-}
-
-/* Align box title/header on image */
-.boxt-1, .boxt-2, .boxt-3, .boxt-4, .boxt-5 {
 	top: 100px;
+	text-align: center;
+}
+.box-set h4 {
+	position: relative;
+	top: 50%;
+    transform: translateY(-50%);
+	color: #ffffff;
+	font-weight: normal;
+	bottom: 16px;
 }
 
 /* Footer settings */
@@ -192,16 +176,19 @@ a:active {
 }
 
 .page-wrap {
-  clear: both;
-  min-height: 100%;
-  /* equal to footer height */
+ 	clear: both;
+ 	min-height: 100%;
     margin-bottom: -95px; 
 }
 .page-wrap:after {
-  content: "";
-  display: block;
+ 	content: "";
+ 	display: block;
 }
 .footer, .page-wrap:after {
-  /* .push must be the same height as footer */
     height: 95px; 
+}
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
 }
